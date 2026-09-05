@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bursa Asansör Bakım, Servis, Yük, Engelli ve Çalışkal Asansör | ULUASANSÖR",
+  title: "ULUASANSÖR | Asansör Bakım, Arıza, Revizyon ve Montaj",
   description:
     "Bursa Nilüfer, Osmangazi, Yıldırım, İnegöl, Gürsu ve Kestel'de 7/24 asansör bakım, arıza servisi, yük asansörü, engelli asansörü, çalışkal asansör, hidrolik ve revizyon hizmetleri sunan ULUASANSÖR.",
   keywords: [
@@ -29,6 +28,9 @@ export const metadata: Metadata = {
     "asansör periyodik kontrol",
     "ULUASANSÖR",
   ],
+  icons: {
+    icon: "/favicon.ico",
+  },
   verification: {
     yandex: "38cfcdab373b759d",
   },
