@@ -45,7 +45,7 @@ function ServiceIcon({ type }: { type: IconType }) {
 
 function UluLogo() {
   return (
-    <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border-2 border-[#00d2c4] shadow-lg shadow-black/60 md:h-16 md:w-16 bg-zinc-900">
+    <div className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-[#00d2c4] shadow-lg shadow-black/60 md:h-14 md:w-14 bg-zinc-900">
       <img
         src="/logo.jpeg"
         alt="ULUASANSÖR Logo"
