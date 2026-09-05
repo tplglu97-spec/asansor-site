@@ -63,6 +63,8 @@ export default function Home() {
   const phone2 = "+905523036116";
   const phone2Text = "0552 303 61 16";
 
+  const email = "info@uluasansor.com";
+
   const address = "Esenevler, Eylül Cd. No:1, 16300 Yıldırım/Bursa";
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Esenevler+Eylul+Cd.+No:1+Yildirim+Bursa";
   const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.2771092416!2d29.1245!3d40.1885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3fe!2sEsenevler%2C%20Eyl%C3%BCl%20Cd.%20No%3A1%2C%2016300%20Y%C4%B1ld%C4%B1r%C4%B1m%2FBursa!5e0!3m2!1str!2str!4v1700000000000";
@@ -329,6 +331,15 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-[#00d2c4] text-xl">✉️</span>
+                    <div>
+                      <p className="font-semibold text-white">E-posta:</p>
+                      <p className="text-sm text-gray-400">
+                        <a href={`mailto:${email}`} className="hover:text-[#00d2c4] transition underline">{email}</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -406,7 +417,8 @@ export default function Home() {
           </span>
         </div>
         <p className="text-sm italic text-[#00d2c4]">“Yüksekliğin Ulu Adresi.”</p>
-        <p className="mt-2 text-sm">Adres: {address} | Telefonlar: {phone1Text} - {phone2Text}</p>
+        <p className="mt-2 text-sm">Adres: {address} | E-posta: {email}</p>
+        <p className="mt-1 text-sm">Telefonlar: {phone1Text} - {phone2Text}</p>
         <p className="mt-2 text-sm">Asansör Bakım • Arıza • Revizyon • Montaj • Modernizasyon</p>
         <p className="mt-6 text-xs text-gray-500">
           © 2026 ULUASANSÖR. Tüm hakları saklıdır.
