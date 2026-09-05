@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ULUASANSÖR | Asansör Bakım, Arıza, Revizyon ve Montaj",
+  title: "Bursa Asansör Bakım ve Servisi | ULUASANSÖR",
   description:
-    "ULUASANSÖR; asansör bakım, arıza, revizyon ve montaj hizmetlerinde hızlı müdahale, güvenilir teknik servis ve profesyonel çözümler sunar.",
+    "ULUASANSÖR; Bursa'da asansör bakım, arıza, revizyon ve montaj hizmetlerinde hızlı müdahale, güvenilir teknik servis ve profesyonel çözümler sunar.",
   keywords: [
-    "asansör bakımı",
-    "asansör arıza",
-    "asansör servisi",
+    "Bursa asansör",
+    "Bursa asansör bakım",
+    "Bursa asansör servisi",
+    "Bursa asansör montaj",
     "asansör revizyon",
-    "asansör montaj",
     "ULUASANSÖR",
   ],
 };
