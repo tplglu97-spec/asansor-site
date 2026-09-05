@@ -1,38 +1,18 @@
-import type { Metadata } from "next";
+import type { Metadata } from "metadata";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ULUASANSÖR | Asansör Bakım, Arıza, Revizyon ve Montaj",
-  description:
-    "Bursa Nilüfer, Osmangazi, Yıldırım, İnegöl, Gürsu ve Kestel'de 7/24 asansör bakım, arıza servisi, yük asansörü, engelli asansörü, çalışkal asansör, hidrolik ve revizyon hizmetleri sunan ULUASANSÖR.",
-  keywords: [
-    "bursa asansör",
-    "bursa asansör bakım",
-    "bursa asansör servisi",
-    "bursa asansör arıza",
-    "bursa yük asansörü",
-    "bursa engelli asansörü",
-    "bursa çalışkal asansör",
-    "bursa hidrolik asansör",
-    "bursa oto asansörü",
-    "bursa yemek asansörü",
-    "bursa nilüfer asansör",
-    "bursa osman gazi asansör",
-    "bursa yıldırım asansör",
-    "bursa inegöl asansör",
-    "bursa gürsü asansör",
-    "bursa kestel asansör",
-    "asansör teknik servis",
-    "asansör arızacısı",
-    "asansör bakımcısı",
-    "asansör revizyon",
-    "asansör periyodik kontrol",
-    "ULUASANSÖR",
-  ],
-  icons: {
-    icon: "/favicon.ico",
-  },
-  verification: {
-    yandex: "38cfcdab373b759d",
+  title: "ULU ASANSÖR | Bursa Asansör Bakım, Arıza, Revizyon ve Montaj",
+  description: "Bursa ve çevresinde profesyonel asansör bakım, 7/24 acil arıza servisi, revizyon, modernizasyon ve montaj hizmetleri. Yüksekliğin ulu adresi.",
+  keywords: "ulu asansör, bursa asansör bakım, asansör arıza servisi bursa, asansör montajı, asansör revizyonu, esenevler asansör",
+  authors: [{ name: "Ulu Asansör" }],
+  openGraph: {
+    title: "ULU ASANSÖR | Yüksekliğin Ulu Adresi",
+    description: "Bursa'da güvenilir 7/24 asansör bakım, arıza ve montaj hizmetleri.",
+    url: "https://uluasansor.com",
+    siteName: "Ulu Asansör",
+    locale: "tr_TR",
+    type: "website",
   },
 };
 
@@ -42,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
-      <body>{children}</body>
+    <html lang="tr" className="scroll-smooth">
+      <body className="bg-[#111] text-white antialiased selection:bg-[#00d2c4] selection:text-black">
+        {children}
+      </body>
     </html>
   );
 }
