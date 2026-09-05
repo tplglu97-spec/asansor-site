@@ -2,9 +2,32 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ULU ASANSÖR | Bursa Asansör Bakım, Arıza, Revizyon ve Montaj",
-  description: "Bursa ve çevresinde profesyonel asansör bakım, 7/24 acil arıza servisi, revizyon, modernizasyon ve montaj hizmetleri. Yüksekliğin ulu adresi.",
-  keywords: "ulu asansör, bursa asansör bakım, asansör arıza servisi bursa, asansör montajı, asansör revizyonu, esenevler asansör",
+  title: "Bursa Asansör Bakım, Servis, Yük, Engelli ve Çalışkal Asansör",
+  description: "Bursa Nilüfer, Osmangazi, Yıldırım, İnegöl, Gürsu ve Kestel ilçelerinde profesyonel asansör bakım, 7/24 acil arıza servisi, revizyon ve montaj hizmetleri.",
+  keywords: [
+    "bursa asansör",
+    "bursa asansör bakım",
+    "bursa asansör servisi",
+    "bursa asansör arıza",
+    "bursa yük asansörlü",
+    "bursa engelli asansörlü",
+    "bursa çalışkal asansör",
+    "bursa hidrolik asansör",
+    "bursa oto asansör",
+    "bursa yemek asansör",
+    "bursa nilüfer asansör",
+    "bursa osman gazi asansör",
+    "bursa yıldırım asansör",
+    "bursa inegöl asansör",
+    "bursa gürsü asansör",
+    "bursa kestel asansör",
+    "asansör teknik servis",
+    "asansör arızacısı",
+    "asansör bakımcısı",
+    "asansör revizyon",
+    "asansör periyodik kontrol",
+    "ULUASANSÖR"
+  ],
   authors: [{ name: "Ulu Asansör" }],
   openGraph: {
     title: "ULU ASANSÖR | Yüksekliğin Ulu Adresi",
