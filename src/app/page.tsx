@@ -172,15 +172,12 @@ export default function Home() {
 
         <div className="relative z-10 max-w-4xl">
           <p className="text-sm font-bold tracking-widest text-[#00d2c4] uppercase">
-            Güvenle Yükselir.
+            ULU ASANSÖR
           </p>
-          <h1 className="mt-4 text-4xl font-extrabold uppercase leading-tight md:text-7xl">
-            Asansör <br />
-            <span className="text-[#00d2c4]">Çözümleri</span>
+          <h1 className="mt-4 text-4xl font-extrabold uppercase leading-tight md:text-6xl lg:text-7xl">
+            Yüksekliğin <br />
+            <span className="text-[#00d2c4]">Ulu Adresi</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base text-gray-300 md:text-lg leading-relaxed">
-            ULU Asansör olarak Bursa ve çevresinde; asansör montajı, bakım, teknik servis, revizyon ve modernizasyon alanlarında profesyonel çözümler sunuyoruz.
-          </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
               href={`https://wa.me/${phone1}?text=Merhaba,%20teklif%20almak%20istiyorum.`}
@@ -408,7 +405,7 @@ export default function Home() {
             ULU <span className="text-[#00d2c4]">ASANSÖR</span>
           </span>
         </div>
-        <p className="text-sm italic text-[#00d2c4]">“Güvenle Yükselir.”</p>
+        <p className="text-sm italic text-[#00d2c4]">“Yüksekliğin Ulu Adresi.”</p>
         <p className="mt-2 text-sm">Adres: {address} | Telefonlar: {phone1Text} - {phone2Text}</p>
         <p className="mt-2 text-sm">Asansör Bakım • Arıza • Revizyon • Montaj • Modernizasyon</p>
         <p className="mt-6 text-xs text-gray-500">
