@@ -43,14 +43,14 @@ function ServiceIcon({ type }: { type: IconType }) {
   );
 }
 
-// Logo Bileşeni
+// Logo Bileşeni (Boyut patlamasını önleyen düzeltilmiş versiyon)
 function UluLogo() {
   return (
-    <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border-2 border-[#00d2c4] shadow-lg shadow-black/60 md:h-16 md:w-16">
+    <div className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-[#00d2c4] bg-zinc-900 shadow-lg md:h-14 md:w-14">
       <img
         src="/logo.jpeg"
         alt="ULUASANSÖR Logo"
-        className="absolute h-[240%] w-[240%] max-w-none object-cover object-center"
+        className="h-full w-full object-cover"
       />
     </div>
   );
@@ -129,7 +129,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#111] text-white">
+    <main className="min-h-screen bg-[#111] text-white overflow-x-hidden">
       {/* Google İçin Gizli ve Detaylı Yerel SEO (Schema) Kodları */}
       <script
         type="application/ld+json"
@@ -138,7 +138,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Ulu Asansör | Bursa Asansör Bakım, Arıza ve Montaj",
-            "image": "https://www.uluasansor.com/logo.png",
+            "image": "https://www.uluasansor.com/logo.jpeg",
             "@id": "https://www.uluasansor.com",
             "url": "https://www.uluasansor.com",
             "telephone": phone1,
@@ -345,7 +345,7 @@ export default function Home() {
             <p className="text-sm font-bold tracking-widest text-[#00d2c4] uppercase">Vizyonumuz</p>
             <h3 className="mt-2 text-2xl font-extrabold">Nereye Ulaşmak İstiyoruz?</h3>
             <p className="mt-4 text-gray-300 leading-relaxed">
-              Hedefimiz yalnızca daha çok asansör kurmak değil, geleceğin dikey büyüyen şehirlerinde sarsılmaz bir güven standardı yaratmak. Bir binaya girildiğinde, asansördeki &apos;Ulu&apos; etiketini gören herkesin &apos;Burada güvendeyim&apos; hissini koşulsuz yaşamasını sağlamak istiyoruz. İsmimizin sektörde sıradan bir markayı aşarak; kalite, emniyet ve ileri teknoloji kelimeleriyle eş anlamlı hale gelmesi, en büyük vizyonumuzdur.
+              Hedefimiz yalnızca daha çok asansör kurmak değil, geleceğin dikey büyüyen şehirlerinde sarsılmaz bir güven standardı yaratmaktır. Bir binaya girildiğinde, asansördeki &apos;Ulu&apos; etiketini gören herkesin &apos;Burada güvendeyim&apos; hissini koşulsuz yaşamasını sağlamak istiyoruz. İsmimizin sektörde sıradan bir markayı aşarak; kalite, emniyet ve ileri teknoloji kelimeleriyle eş anlamlı hale gelmesi, en büyük vizyonumuzdur.
             </p>
           </div>
         </div>
@@ -488,7 +488,7 @@ export default function Home() {
         </div>
         <p className="text-sm italic text-[#00d2c4]">“Yüksekliğin Ulu Adresi.”</p>
         <p className="mt-2 text-sm">Adres: {address} | E-posta: {email}</p>
-        <p className="mt-1 text-sm">Telefonlar: {phone1Text} - {phone2Test}</p>
+        <p className="mt-1 text-sm">Telefonlar: {phone1Text} - {phone2Text}</p>
         <p className="mt-2 text-sm">Asansör Bakım • Arıza • Revizyon • Montaj • Modernizasyon</p>
         <p className="mt-6 text-xs text-gray-500">
           © 2026 ULUASANSÖR. Tüm hakları saklıdır.
