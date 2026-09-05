@@ -130,6 +130,76 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#111] text-white">
+      {/* Google İçin Gizli ve Detaylı Yerel SEO (Schema) Kodları */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Ulu Asansör | Bursa Asansör Bakım, Arıza ve Montaj",
+            "image": "https://www.uluasansor.com/logo.png",
+            "@id": "https://www.uluasansor.com",
+            "url": "https://www.uluasansor.com",
+            "telephone": phone1,
+            "priceRange": "₺₺",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Esenevler, Eylül Cd. No:1",
+              "addressLocality": "Yıldırım",
+              "addressRegion": "Bursa",
+              "postalCode": "16300",
+              "addressCountry": "TR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.1885,
+              "longitude": 29.1245
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "00:00",
+              "closes": "23:59"
+            },
+            "areaServed": [
+              "Nilüfer",
+              "Osmangazi",
+              "Yıldırım",
+              "İnegöl",
+              "Gemlik",
+              "Mudanya",
+              "Kestel",
+              "Gürsu"
+            ],
+            "makesOffer": [
+              "Asansör Bakım",
+              "Asansör Arıza Servisi",
+              "Asansör Revizyonu ve Modernizasyon",
+              "Yük Asansörü Montajı",
+              "Otopark Asansörü",
+              "Calaskal Asansör",
+              "Hidrolik Asansör Bakımı",
+              "Engelli Asansör Arızası",
+              "Engelli Asansör Bakımı",
+              "Engelli Asansör Montajı",
+              "Oto Asansörü Tamiri",
+              "Yemek Asansörü Servisi",
+              "Periyodik Asansör Kontrolü",
+              "Asansör Bakım Sözleşmesi"
+            ]
+          }),
+        }}
+      />
+
       {/* Header */}
       <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b border-zinc-800 bg-[#111]/90 px-6 py-4 backdrop-blur-md md:px-12">
         <div className="flex items-center gap-3">
@@ -418,7 +488,7 @@ export default function Home() {
         </div>
         <p className="text-sm italic text-[#00d2c4]">“Yüksekliğin Ulu Adresi.”</p>
         <p className="mt-2 text-sm">Adres: {address} | E-posta: {email}</p>
-        <p className="mt-1 text-sm">Telefonlar: {phone1Text} - {phone2Text}</p>
+        <p className="mt-1 text-sm">Telefonlar: {phone1Text} - {phone2Test}</p>
         <p className="mt-2 text-sm">Asansör Bakım • Arıza • Revizyon • Montaj • Modernizasyon</p>
         <p className="mt-6 text-xs text-gray-500">
           © 2026 ULUASANSÖR. Tüm hakları saklıdır.
