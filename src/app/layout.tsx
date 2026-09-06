@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bursa Asansör Bakım, Servis, Yük, Engelli ve Çalışkal Asansör",
+  title: "Ulu Asansör",
   description: "Bursa Nilüfer, Osmangazi, Yıldırım, İnegöl, Gürsu ve Kestel ilçelerinde profesyonel asansör bakım, 7/24 acil arıza servisi, revizyon ve montaj hizmetleri.",
   keywords: [
     "bursa asansör",
